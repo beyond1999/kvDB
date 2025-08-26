@@ -604,4 +604,5 @@ func main() {
 		_ = db.Set(key, []byte(strings.Repeat("x", 128)), 0)
 	}
 	fmt.Println("written 2000 keys; cold segments:", len(db.cold))
+	fmt.Println("written 2000 keys:", len(db.cold))
 }
